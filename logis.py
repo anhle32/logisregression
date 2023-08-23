@@ -52,7 +52,7 @@ if choice == 'Mục tiêu của mô hình':
     st.write("""###### Mô hình sử dụng thuật toán LogisticRegression""")
     st.image("ham_spam.jpg")
     st.image("LogReg_1.png")
-    st.image("motabien.png")
+    st.image("hinh.png")
 
 elif choice == 'Xây dựng mô hình':
     st.subheader("Xây dựng mô hình")
