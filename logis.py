@@ -50,7 +50,7 @@ if choice == 'Mục tiêu của mô hình':
     ###### Mô hình được xây dựng để dự báo xác suất vỡ nợ của nông hộ dựa trên các biến đặc điểm chủ hộ, điều kiện của nông hộ.
     """)  
     st.write("""###### Mô hình sử dụng thuật toán LogisticRegression""")
-    st.image("ham_spam.jpg")
+    st.image("hinh1.jpg")
     st.image("LogReg_1.png")
     st.image("hinh.png")
 
