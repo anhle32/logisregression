@@ -108,5 +108,7 @@ elif choice == 'Sử dụng mô hình để dự báo':
         if len(lines)>0:
             st.code(lines)
             X_1 = lines.drop(columns=['y'])   
-            y_pred_new = model.predict(X_1)       
+            y_pred_new = model.predict(X_1)
+            pd=model.predict_proba(X_1)
             st.code("giá trị dự báo: " + str(y_pred_new))
+            st.code("xác suất vỡ nợ của hộ là: " + str(pd))
