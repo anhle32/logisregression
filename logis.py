@@ -12,8 +12,8 @@ from sklearn import metrics
 
 df = pd.read_csv("credit access.csv", encoding='latin-1')
 
-st.title("Hồi quy tuyến tính")
-st.write("## Dự báo khả năng tiếp cận vốn tín dụng của nông hộ")
+st.title("Hồi quy logistic")
+st.write("## Dự báo xác suất vỡ nợ của nông hộ")
 
 uploaded_file = st.file_uploader("Choose a file", type=['csv'])
 if uploaded_file is not None:
@@ -47,7 +47,7 @@ choice = st.sidebar.selectbox('Danh mục tính năng', menu)
 if choice == 'Mục tiêu của mô hình':    
     st.subheader("Mục tiêu của mô hình")
     st.write("""
-    ###### Mô hình được xây dựng để dự báo khả năng tiếp cận vốn tín dụng của nông hộ dựa trên các biến đặc điểm chủ hộ, điều kiện của nông hộ.
+    ###### Mô hình được xây dựng để dự báo xác suất vỡ nợ của nông hộ dựa trên các biến đặc điểm chủ hộ, điều kiện của nông hộ.
     """)  
     st.write("""###### Mô hình sử dụng thuật toán LogisticRegression""")
     st.image("ham_spam.jpg")
