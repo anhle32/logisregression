@@ -10,7 +10,6 @@ from sklearn import metrics
 
 
 
-df = pd.read_csv("credit access.csv", encoding='latin-1')
 
 st.title("Hồi quy logistic")
 st.write("## Dự báo xác suất vỡ nợ của nông hộ")
