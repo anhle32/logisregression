@@ -111,4 +111,4 @@ elif choice == 'Sử dụng mô hình để dự báo':
             y_pred_new = model.predict(X_1)
             pd=model.predict_proba(X_1)
             st.code("giá trị dự báo: " + str(y_pred_new))
-            st.code("xác suất vỡ nợ của hộ là: " + str(pd))
+            st.code("xác suất vỡ nợ của hộ là: " + str(pd[1]))
