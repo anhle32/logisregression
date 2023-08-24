@@ -70,6 +70,10 @@ elif choice == 'Xây dựng mô hình':
     st.code("Score train:"+ str(round(score_train,2)) + " vs Score test:" + str(round(score_test,2)))
     fig2=sns.heatmap(confusion_matrix, annot=True)
     st.pyplot(fig2.figure)
+    he_so=model.coef_
+    st.code("xác suất vỡ nợ của hộ là: " + str(he_so))
+
+
     
 
     
