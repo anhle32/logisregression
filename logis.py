@@ -71,7 +71,7 @@ elif choice == 'Xây dựng mô hình':
     fig2=sns.heatmap(confusion_matrix, annot=True)
     st.pyplot(fig2.figure)
     he_so=model.coef_
-    st.code("xác suất vỡ nợ của hộ là: " + str(he_so))
+    st.code("he so trong mo hinh: " + str(he_so))
 
 
     
